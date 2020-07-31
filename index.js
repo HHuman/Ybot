@@ -87,12 +87,11 @@ client.on('message', (message) => {
       .setFooter('영운고', img)
 
     message.channel.send(embed)
-  } else if(message.content == '!help') {
+  } else if(message.content == '/help') {
     let helpImg = 'https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png';
     let commandList = [
       {name: '/help', desc: 'help'},
       {name: '안녕', desc: '현재 핑 상태'},
-      {name: 'embed', desc: 'embed 예제1'},
       {name: '/전체공지', desc: 'dm으로 전체 공지 보내기'},
       {name: '/전체공지2', desc: 'dm으로 전체 embed 형식으로 공지 보내기'},
       {name: '/청소', desc: '텍스트 지움'},
